@@ -1,0 +1,26 @@
+.header__nav {
+  width: 1200px;
+  height: 100px;
+  margin: auto;
+}
+.header__nav__logo {
+  width: 200px;
+  float: left;
+  vertical-align: middle;
+}
+.nav__menu {
+  width: 800px;
+  float: right;
+}
+.nav__menu__item {
+  display: inline-block;
+  float: right;
+  list-style: none;
+  margin: auto 20px;
+}
+@font-face {
+  font-family: Picadilly;
+}
+.sub--heading {
+  font-family: Picadilly sans-serif;
+}
