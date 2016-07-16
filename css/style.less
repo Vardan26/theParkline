@@ -1,40 +1,53 @@
-.header{
- &__nav{
-   width: 1200px;
-   height: 100px;
-   margin: auto;
- }
-  &__logo{
-    width: 200px;
-    float: left;
-    vertical-align: middle;
+.header {
+  width: 100%;
+  margin: auto;
 
-  }
-}
-.nav{
-  &__menu{
-    width: 800px;
-    float: right;
+  &__nav {
+    width: 1150px;
+    height: 120px;
+    margin: 0 auto;
+
+    &__logo{
+      width: 200px;
+      height: auto;
+      margin:30px 0 0 ;
+      display: inline;
+    }
+    &__items{
+      display: inline;
+      margin-left: 355px ;
+    }
     &__item{
-      display: inline-block;
-      float: right;
-      list-style: none;
-      margin: auto 20px;
+      display: inline;
+      margin: 0 20px;
+      &__link{
+        list-style: none;
+        text-align: center;
+        text-decoration: none;
+      }
     }
   }
 }
 
+.page__slider{
+  width: 100%;
+  display: block;
 
-
-
-
-
-
-
-@font-face {
-  font-family:Picadilly;
+  &__img{
+    width: 100%;
+  }
+}
+.header__slider {
+  &__title {
+    margin-top: -600px;
+    z-index: 1;
+    color: #f87603;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: 300;
+  }
 }
 
-.sub--heading{
-  font-family: Picadilly sans-serif;
-}
+
+  @import "reset.css";
