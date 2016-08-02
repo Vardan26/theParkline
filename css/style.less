@@ -1,26 +1,46 @@
+
+.hidden {
+  display: none !important;
+}
+
+//page__fonts
+
+@font-face {
+  font-family: Montserrat sans-serif;
+}
+
+
+
+
+
+
 .header {
   width: 100%;
   margin: auto;
+  display: block;
 
   &__nav {
     width: 1150px;
     height: 120px;
     margin: 0 auto;
 
-    &__logo{
+    &__logo {
       width: 200px;
       height: auto;
-      margin:30px 0 0 ;
-      display: inline;
+      position: relative;
+      display: inline-block;
+      margin: 30px 0;
     }
-    &__items{
-      display: inline;
-      margin-left: 355px ;
+    &__items {
+      display: inline-block;
+      position: relative;
+      float: right;
+      top: 50%;
     }
-    &__item{
+    &__item {
       display: inline;
       margin: 0 20px;
-      &__link{
+      &__link {
         list-style: none;
         text-align: center;
         text-decoration: none;
@@ -29,25 +49,195 @@
   }
 }
 
-.page__slider{
+//page slider
+
+.page__slider {
   width: 100%;
   display: block;
+  position: relative;
+  height: 700px;
 
-  &__img{
+  &__img {
     width: 100%;
+    height: 700px;
   }
 }
-.header__slider {
+
+.page--home__slider {
+
   &__title {
-    margin-top: -600px;
+    margin-top: -500px;
     z-index: 1;
     color: #f87603;
     font-size: 50px;
     text-align: center;
     letter-spacing: 5px;
-    font-weight: 300;
+    font-weight: 100;
+  }
+  &__p {
+    text-align: center;
+    margin: 70px auto 0;
+    width: 800px;
+    color: #e9e2df;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+//page headings
+
+.page__title {
+  text-align: center;
+  font-size: 30px;
+  color: #465d4b;
+  letter-spacing: 2px;
+  font-family: "Arial", ;
+}
+
+//page article
+
+.page__article {
+  margin: 70px 0;
+  display: block;
+  &__txts {
+    position: relative;
+    display: inline-block;
+    left: 50px;
+    vertical-align: top;
+    &__title {
+      display: block;
+      position: relative;
+    }
+    &__p {
+      width: 250px;
+      display: block;
+      margin: 50px 0;
+    }
+    &__btn {
+      position: relative;
+      display: block;
+    }
+  }
+  &__img {
+    width: 700px;
+    display: inline-block;
+    position: relative;
+  }
+
+}
+
+//page gallery
+
+.page__gallery {
+  width: 1150px;
+  display: block;
+  margin: auto;
+
+  &__img {
+    width: 370px;
+    margin: 5px 5px;
+    display: inline;
+    position: relative;
+  }
+}
+
+//page--home
+
+.page--home__maine {
+  width: 1150px;
+  margin: auto;
+  &__neighborhood {
+    &__txts {
+      left: 0;
+    }
+    &__img {
+      position: relative;
+      left: 50px;
+    }
+  }
+  &__title{
+    margin: 70px auto;
   }
 }
 
 
-  @import "reset.css";
+
+.page--home__gallery__btn {
+  margin: 30px auto;
+  display: block
+}
+
+.page--home__map {
+  width: 100%;
+  display: block;
+  position: relative;
+  height: 650px;
+  &__img {
+    width: 100%;
+    height: 650px;
+    position: absolute;
+  }
+  &__items {
+    display: inline-block;
+    width: 250px;
+    height: 100%;
+    margin-left: 70px;
+    position: relative;
+    background-color: #f87706;
+  }
+}
+
+
+
+
+//page contact
+
+.page__contact {
+  width: 950px;
+  margin: 50px auto 70px;
+  &__logo {
+    display: block;
+    margin: auto;
+  }
+  &__p {
+    margin: 50px auto;
+    width: 800px;
+    text-align: center;
+    line-height: 25px;
+  }
+}
+
+.page__contact__form {
+  &__input {
+    width: 400px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    margin: 5px 35px;
+    border: none;
+    border-bottom: inset 1px #a2aeab;
+  }
+  &__btn {
+    display: block;
+    margin: 30px auto;
+  }
+}
+
+
+//footer
+
+.footer {
+  width: 100%;
+  height: 80px;
+  background-color: #3a5f40;
+  display: block;
+  &__txt {
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+    top: 20px;
+  }
+}
+
+@import "reset.css";
