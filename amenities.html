@@ -3,66 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <title>Amenities</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
 </head>
 <body>
-<header class="header">
+<header class="header page--amenities__header">
     <div class="header__nav">
-        <img src="img/logo__black.png" class="header__nav__logo">
-        <ul class=header__nav__items>
+        <a href="index.html"> <img src="img/logo__black.png" class="header__nav__logo"> </a>
+        <ul class="header__nav__items">
             <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">home</a>
+                <a href="index.html" class="header__nav__item__link">home</a>
             </li>
             <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">availability</a>
+                <a href="availability.html" class="header__nav__item__link">availability</a>
             </li>
             <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">interior</a>
+                <a href="interior.html" class="header__nav__item__link">interior</a>
+            </li>
+            <li class="header__nav__item header__nav__itemActive">
+                <a href="amenities.html" class="header__nav__item__link">amenities</a>
             </li>
             <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">page--amenities</a>
+                <a href="neighborhood.html" class="header__nav__item__link">neighborhood</a>
             </li>
             <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">neighborhood</a>
-            </li>
-            <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">contact</a>
+                <a href="contact.html" class="header__nav__item__link">contact</a>
             </li>
         </ul>
     </div>
 
+
 </header>
 
 
-<div class="page--amenities">
+<div class="page page--amenities">
+    <h1 class="page__title page--amenities__title">amenities</h1>
+    <div class="page__slider page--amenities__slider">
+        <img src="img/slider/banner1.jpg" class="page__slider__img page--amenities__slider__img page--amenities__slider__img__1 ">
+        <img src="img/slider/slider2.jpg" class="page__slider__img page--amenities__slider__img page--amenities__slider__img__2">
+        <img src="img/slider/slider3.jpg" class="page__slider__img page--amenities__slider__img page--amenities__slider__img__3">
+
+    </div>
 
 
-    <h1 class="page__title page--amenities__title"></h1>
-    <article class="page__slider page--amenities__slider">
-        <img src="" class="page__slider__img page--amenities__slider__img page--amenities__slider__img__1">
-        <img src="" class="page__slider__img page--amenities__slider__img page--amenities__slider__img__2">
-        <img src="" class="page__slider__img page--amenities__slider__img page--amenities__slider__img__3">
-    </article>
+    <ul class="page--amenities__gallery">
+        <li class="page--amenities__gallery__col page--amenities__gallery__col--1">
+            <div class="page--amenities__gallery__col__img page--amenities__gallery__col__img--1">
+                <span class="page--amenities__gallery__col__title--1"> contemporary</span>
+                <h2 class="page--amenities__gallery__col__title--2">urban beauty</h2>
+            </div>
+            <div class="page--amenities__gallery__col__img page--amenities__gallery__col__img--3">
+                <p class="page__p page--amenities__gallery__col__txt"> Quisque nisl felis, venenatis tristique,
+                   dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante.
+                   Quisque nisl felis, venenatis, dignissim in, ultrices sit
+                    Quisque nisl felis, venenatis tristique,
+                   dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante.
+                   Quisque nisl felis, venenatis, dignissim in, ultrices sit
+                    s, venenatis, dignissim in, ultrices sit
+                    dignissim in, ultrices sit amet, augue.
+                </p>
+                <p class="page__p page--amenities__gallery__col__txt"> Quisque nisl felis, venenatis tristique,
+                   dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante.
+                   Quisque nisl felis, venenatis, dignissim in, ultrices sit
+                   dignissim in. Proin sodales libero eget ante.
+                   Quisque nisl felis, venenatis, dignissim in, ultrices sit
+                </p>
+            </div>
+        </li>
+        <li class="page--amenities__gallery__col page--amenities__gallery__col--2">
+            <img src="img/amenities/amenities_04.jpg"
+                 class="page--amenities__gallery__col__img page--amenities__gallery__col__img--2">
+            <img src="img/amenities/amenities_06.jpg"
+                 class="page--amenities__gallery__col__img page--amenities__gallery__col__img--4">
+        </li>
 
-
-
-    <section class="page--amenities__sections">
-        <div class="page--amenities__section__title page--amenities__section">
-            <span class="page--amenities__section__title__1"></span>
-            <h2 class="page--amenities__section__title__2"></h2>
-        </div>
-        <img src="" class="page--amenities__section__img page--amenities__section">
-        <div class="page--amenities__section__txt page--amenities__section">
-            <p class="page--amenities__section__txt_p"></p>
-        </div>
-        <img src="" class="page--amenities__section__illustration page--amenities__section">
-        <button type="button" class="page--amenities__section__btn page__btn"></button>
-    </section>
+    </ul>
+    <button type="button" class="page--amenities__gallery__btn page__btn">get in touch</button>
 
 </div>
 
 
 <footer class="footer">
-    <p class="footer__text"></p>
+    <p class="footer__txt">626 flatbush avenu brooklyn, NY 11225 <a>(718)826 6626</a></p>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-2.2.2.min.js"><\/script>')</script>
+<script src="js/jquery.waitforimages.min.js"></script>
+<script src="js/scrollreveal.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

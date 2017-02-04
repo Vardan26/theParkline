@@ -3,59 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <title>Interior</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 <header class="header">
     <div class="header__nav">
-        <img src="img/logo__black.png" class="header__nav__logo">
-        <ul class=header__nav__items>
+        <a href="index.html"> <img src="img/logo__black.png" class="header__nav__logo"> </a>
+        <ul class="header__nav__items">
             <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">home</a>
+                <a href="index.html" class="header__nav__item__link">home</a>
             </li>
             <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">availability</a>
+                <a href="availability.html" class="header__nav__item__link">availability</a>
+            </li>
+            <li class="header__nav__item header__nav__itemActive">
+                <a href="interior.html" class="header__nav__item__link">interior</a>
             </li>
             <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">page--interior</a>
+                <a href="amenities.html" class="header__nav__item__link">amenities</a>
             </li>
             <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">amenities</a>
+                <a href="neighborhood.html" class="header__nav__item__link">neighborhood</a>
             </li>
             <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">amenities</a>
-            </li>
-            <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">contact</a>
+                <a href="contact.html" class="header__nav__item__link">contact</a>
             </li>
         </ul>
     </div>
 
+
 </header>
 
-<div class="page--interior">
-    <h1 class=" page--interior__title page__title"></h1>
-    <div class="page--interior__gallery">
-        <img src="#" class="page--interior__gallery__img page--interior__gallery__img--1 ">
-        <img src="#" class="page--interior__gallery__img page--interior__gallery__img--2">
-        <img src="#" class="page--interior__gallery__img page--interior__gallery__img--3">
-        <img src="#" class="page--interior__gallery__img page--interior__gallery__img--4">
-    </div>
+
+<div class="page page--interior">
+    <h1 class=" page--interior__title page__title">interiors</h1>
+    <ul class="page--interior__gallery">
+        <li class="page--interior__gallery__col page--interior__gallery__col--1">
+            <img src="img/interior/interiorGal--01.jpg" class="page--interior__gallery__col__img page--interior__gallery__col__img--1 ">
+            <img src="img/interior/interiorGal--03.jpg" class="page--interior__gallery__col__img page--interior__gallery__col__img--3">
+        </li>
+        <li class="page--interior__gallery__col page--interior__gallery__col--2">
+            <img src="img/interior/interiorGal--02.jpg" class="page--interior__gallery__col__img page--interior__gallery__col__img--2">
+            <img src="img/interior/interiorGal--04.jpg" class="page--interior__gallery__col__img page--interior__gallery__col__img--4">
+        </li >
+        <li class="page--interior__gallery__col page--interior__gallery__col--3">
+            <img src="img/interior/interiorGal--05.jpg" class="page--interior__gallery__col__illustration">
+        </li >
+    </ul>
 
     <article class="page__article page--interior__article">
-        <img src="img/homeNeighborhood.jpg" class="page__article__img page--interior__article__img">
-        <h2 class="page--interior__article__title page__title--secondary">neighborhood</h2>
-        <p class="page--interior__article__p page__p">
-            Praesent blandit dolor.Sed non quam. In vel mi sit amet augue congue elementum.
-            Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc,
-            viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus.
-            Ut ultrices ultrices enim. Curabitur sit amet mauris
-        </p>
-        <button type="button" class="page--interior__article__btn page__btn">see more</button>
+        <img src="img/interior/interiorSec.jpg" class="page__article__img  page--interior__article__img">
+        <div class="page__article__txts page--interior__article__txts">
+            <h2 class="page__title--secondary page__article__txts__title page--interior__article__txts__title">
+                energy star</h2>
+            <p class="page__p page__article__txts__p page--interior__article__p">
+                Praesent blandit dolor.Sed non quam. In vel mi sit amet augue congue elementum.
+                Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc,
+                viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus.
+                Ut ultrices ultrices enim. Curabitur sit amet mauris Vestibulum tincidunt malesuada tellus.
+                Ut ultrices ultrices enim. Curabitur sit amet mauris
+            </p>
+            <p class="page__p page__article__txts__p page--interior__article__p">
+                Praesent blandit dolor.Sed non quam. In vel mi sit amet augue congue elementum.
+                Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc,
+                viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus.
+                Ut ultrices ultrices enim. Curabitur sit amet mauris Vestibulum tincidunt malesuada tellus.
+                Ut ultrices ultrices enim. Curabitur sit amet mauris
+            </p>
+            <button type="button" class="page--interior__article__-btn page__article__txts__btn page__btn">see
+                more
+            </button>
+        </div>
     </article>
 </div>
 
 <footer class="footer">
-    <p class="footer__text"></p>
+    <p class="footer__txt">626 flatbush avenu brooklyn, NY 11225 <a>(718)826 6626</a></p>
 </footer>
 </body>
 </html>

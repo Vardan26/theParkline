@@ -3,32 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>The Parkline</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script srcpage__slider__img="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
 </head>
 <body>
 
 
 <header class="header">
     <div class="header__nav">
-        <img src="img/logo__black.png" class="header__nav__logo">
+        <a href="index.html"> <img src="img/logo__black.png" class="header__nav__logo"> </a>
         <ul class="header__nav__items">
-            <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">home</a>
+            <li class="header__nav__item header__nav__itemActive">
+                <a href="index.html" class="header__nav__item__link">home</a>
             </li>
             <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">availability</a>
+                <a href="availability.html" class="header__nav__item__link">availability</a>
             </li>
             <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">interior</a>
+                <a href="interior.html" class="header__nav__item__link">interior</a>
             </li>
             <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">amenities</a>
+                <a href="amenities.html" class="header__nav__item__link">amenities</a>
             </li>
             <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">neighborhood</a>
+                <a href="neighborhood.html" class="header__nav__item__link">neighborhood</a>
             </li>
             <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">contact</a>
+                <a href="contact.html" class="header__nav__item__link">contact</a>
             </li>
         </ul>
     </div>
@@ -38,32 +40,39 @@
 
 
 <div class="page page--home">
-    <article class="page__slider page--home__slider">
-        <img src="img/header.jpg" class="page__slider__img page--home__slider__img page--home__slider__img__1">
-        <img src="" class="page__slider__img page--home__slider__img page--home__slider__img__2 hidden">
-        <img src="" class="page__slider__img page--home__slider__img page--home__slider__img__3 hidden">
-        <h1 class="page--home__slider__title">Welcome to the Parkline</h1>
-        <p class="page--home__slider__p">When Olmsted and Vaux designed Prospect Park,
-            they had no idea that someday
-            the most exhilarating way to enjoy it would be from above
-        </p>
-    </article>
+    <div class="page__slider page--home__slider">
+        <div class="page__slider__img">
+            <img src="img/slider/banner1.jpg" class="page--home__slider__img--1">
+            <div class="page--home__slider__img__txt">
+                <h1 class="page--home__slider__title">Welcome to the Parkline</h1>
+                <p class="page--home__slider__p">When Olmsted and Vaux designed Prospect Park,
+                    they had no idea that someday
+                    the most exhilarating way to enjoy it would be from above
+                </p>
+            </div>
+        </div>
+        <img src="img/slider/banner2.jpg" class="page__slider__img page--home__slider__img page--home__slider__img--2">
+        <img src="img/slider/banner3.jpg" class="page__slider__img page--home__slider__img page--home__slider__img--3">
+
+    </div>
+
     <section class="page--home__maine">
         <h1 class="page__title page--home__maine__title">breathtaking living</h1>
         <article class="page__article page--home__maine__interior">
             <img src="img/homeInterior.jpg" class="page__article__img  page--home__maine__interior__img">
             <div class="page__article__txts page--home__maine__interior__txts">
                 <h2 class="page--home__maine__interior__title page__article__txts__title page__title--secondary">
-                    neighborhood</h2>
-                <p class="page--home__maine__interior__p page__article__txts__p page__p">
+                    interiors</h2>
+                <p class="page__p page--home__maine__interior__p page__article__txts__p">
                     Praesent blandit dolor.Sed non quam. In vel mi sit amet augue congue elementum.
                     Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc,
                     viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus.
+                    Ut ultrices ultrices enim. Curabitur sit amet mauris Vestibulum tincidunt malesuada tellus.
                     Ut ultrices ultrices enim. Curabitur sit amet mauris
                 </p>
-                <button type="button" class="page--home__maine__interior__btn page__article__txts__btn page__btn">see
+                <a href="interior.html" class="page--home__maine__interior__btn page__article__txts__btn page__btn">see
                     more
-                </button>
+                </a>
             </div>
         </article>
 
@@ -77,9 +86,10 @@
                     viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus.
                     Ut ultrices ultrices enim. Curabitur sit amet mauris
                 </p>
-                <button type="button" class="page--home__maine__neighborhood__btn page__article__txts__btn page__btn">see
+                <a href="neighborhood.html" type="button" class="page--home__maine__neighborhood__btn page__article__txts__btn page__btn">
+                    see
                     more
-                </button>
+                </a>
 
             </div>
             <img src="img/homeNeighborhood.jpg" class="page__article__img page--home__maine__neighborhood__img">
@@ -90,59 +100,82 @@
             <img src="img/homeAmenities.jpg" class="page__article__img page--home__maine__amenities__img">
             <div class="page__article__txts page--home__maine__amenities__txts">
                 <h2 class="page--home__maine__amenities__title page__article__txts__title page__title--secondary">
-                    neighborhood</h2>
+                    amenities</h2>
                 <p class="page--home__maine__amenities__p page__article__txts__p page__p">
                     Praesent blandit dolor.Sed non quam. In vel mi sit amet augue congue elementum.
                     Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc,
                     viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus.
                     Ut ultrices ultrices enim. Curabitur sit amet mauris
                 </p>
-                <button type="button" class="page--home__maine__amenities__btn page__article__txts__btn page__btn">see
+                <a href="amenities.html" type="button" class="page--home__maine__amenities__btn page__article__txts__btn page__btn">see
                     more
-                </button>
+                </a>
             </div>
         </article>
     </section>
 
-    <section class="page--home__gallery page__gallery">
+    <div class="page--home__gallery page__gallery">
         <h1 class="page--home__gallery__title page__title">Prospect Park</h1>
-        <article class="page--home__gallery page__gallery">
-            <img src="img/homePark1.jpg" class="page__gallery__img--1 page__gallery__img">
-            <img src="img/homePark2.jpg" class="page__gallery__img--2 page__gallery__img">
-            <img src="img/homePark3.jpg" class="page__gallery__img--3 page__gallery__img">
-            <img src="img/homePark4.jpg" class="page__gallery__img--4 page__gallery__img">
-            <img src="img/homePark5.jpg" class="page__gallery__img--5 page__gallery__img">
-            <img src="img/homePark6.jpg" class="page__gallery__img--6 page__gallery__img">
-            <button type="button" class="page--home__gallery__btn page__btn">see more</button>
-        </article>
-    </section>
+        <ul class="page--home__gallery page__gallery">
+            <li class="page__gallery__col page__gallery__col--1">
+                <img src="img/homePark1.jpg" class="page__gallery__col__img--1 page__gallery__col__img">
+                <img src="img/homePark4.jpg" class="page__gallery__col__img--2 page__gallery__col__img">
+            </li>
+            <li class="page__gallery__col page__gallery__col--2">
+                <img src="img/homePark2.jpg" class="page__gallery__col__img--4 page__gallery__col__img">
+                <img src="img/homePark5.jpg" class="page__gallery__col__img--5 page__gallery__col__img">
+            </li>
+            <li class="page__gallery__col page__gallery__col--3">
+                <img src="img/homePark3.jpg" class="page__gallery__col__img--3 page__gallery__col__img">
+                <img src="img/homePark6.jpg" class="page__gallery__col__img--6 page__gallery__col__img">
+            </li>
+        </ul>
+        <a href="availability.html" type="button" class="page--home__gallery__btn page__btn">see more</a>
+
+    </div>
 
 
     <div class="page--home__map">
         <img src="img/map.jpg" class="page--home__map__img">
         <ul class="page--home__map__items">
             <li class="page--home__map__item">
-                <a href="#" class="page--home__map__item__link">bars</a>
+                <img src="img/icons/iconBar.png" class="page--home__map__item__icon">
+                <span class="page--home__map__item__link">bars</span>
             </li>
             <li class="page--home__map__item">
-                <a href="#" class="page--home__map__item__link">restaurants</a>
+                <img src="img/icons/iconRest.png" class="page--home__map__item__icon">
+                <span class="page--home__map__item__link">restaurants</span>
             </li>
             <li class="page--home__map__item">
-                <a href="#" class="page--home__map__item__link">cafes</a>
+                <img src="img/icons/iconCafe.png" class="page--home__map__item__icon">
+                <span class="page--home__map__item__link">cafes</span>
             </li>
             <li class="page--home__map__item">
-                <a href="#" class="page--home__map__item__link">health</a>
+                <img src="img/icons/iconHealth.png" class="page--home__map__item__icon">
+                <span class="page--home__map__item__link">health</span>
             </li>
             <li class="page--home__map__item">
-                <a href="#" class="page--home__map__item__link">recreation</a>
+                <img src="img/icons/iconCreat.png" class="page--home__map__item__icon">
+                <span class="page--home__map__item__link">recreation</span>
             </li>
             <li class="page--home__map__item">
-                <a href="#" class="page--home__map__item__link">convenience</a>
+                <img src="img/icons/iconConv.png" class="page--home__map__item__icon">
+                <span class="page--home__map__item__link">convenience</span>
             </li>
             <li class="page--home__map__item">
-                <a href="#" class="page--home__map__item__link">schools</a>
+                <img src="img/icons/iconSchool.png" class="page--home__map__item__icon">
+                <span class="page--home__map__item__link">schools</span>
             </li>
         </ul>
+        <div class="page--home__map__locations">
+            <img src="img/icons/iconBar.png" class="page--home__map__location page--home__map__location--bar">
+            <img src="img/icons/iconRest.png" class="page--home__map__location page--home__map__location--rest">
+            <img src="img/icons/iconCafe.png" class="page--home__map__location page--home__map__location--cafe">
+            <img src="img/icons/iconHealth.png" class="page--home__map__location page--home__map__location--health">
+            <img src="img/icons/iconCreat.png" class="page--home__map__location page--home__map__location--creat">
+            <img src="img/icons/iconConv.png" class="page--home__map__location page--home__map__location--conv">
+            <img src="img/icons/iconSchool.png" class="page--home__map__location page--home__map__location--school">
+        </div>
     </div>
 
 
@@ -150,10 +183,9 @@
         <img src="img/logo__black.png" class="page--home__contact__logo page__contact__logo">
         <p class="page--home__contact__p page__p page__contact__p"> Quisque nisl felis, venenatis tristique,
             dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante.
-            Quisque nisl felis, venenatis tristique,
-            dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante.
-            <a href="#" class="page--home__contact__p__link page__contact__p__link page__title--secondary"><br> Nulla quam. Aenean laoreet.
-                Vestibulum nisi lectus, commodo ac,facilisis ac, ultricies eu, pede.</br>
+            Quisque nisl felis, venenatis, dignissim in, ultrices sit.
+            <a href="#" class="page--home__contact__p__link page__contact__p__link page__title--secondary"><br> Nulla
+                quam. Aenean laoreet.Facilisis ac, ultricies eu, pede.
             </a>
         </p>
         <form class="page--home__contact__form page__contact__form">
@@ -163,7 +195,8 @@
             <input type="text" value="phone number" class="page__contact__form__input page--home__contact__form__input">
             <input type="text" value="budget" class="page__contact__form__input page--home__contact__form__input">
             <input type="text" value="bedrooms" class="page__contact__form__input page--home__contact__form__input">
-            <input type="submit" value="submit" class="page--home__contact__form__btn page__contact__form__btn page__btn">
+            <input type="submit" value="submit"
+                   class="page--home__contact__form__btn page__contact__form__btn page__btn">
         </form>
     </article>
 </div>
@@ -173,5 +206,12 @@
     <p class="footer__txt">626 flatbush avenu brooklyn, NY 11225 <a>(718)826 6626</a></p>
     <img src="" class="footer__logo">
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-2.2.2.min.js"><\/script>')</script>
+<script src="js/jquery.waitforimages.min.js"></script>
+<script src="js/scrollreveal.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
 </body>
 </html>

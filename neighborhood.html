@@ -1,70 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Neighborhood</title>
+  <meta charset="UTF-8">
+  <title>Neighborhood</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 <header class="header">
-    <div class="header__nav">
-        <img src="img/logo__black.png" class="header__nav__logo">
-        <ul class=header__nav__items>
-            <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">home</a>
-            </li>
-            <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">availability</a>
-            </li>
-            <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">interior</a>
-            </li>
-            <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">amenities</a>
-            </li>
-            <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">amenities</a>
-            </li>
-            <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">contact</a>
-            </li>
-        </ul>
-    </div>
+  <div class="header__nav">
+    <a href="index.html"> <img src="img/logo__black.png" class="header__nav__logo"> </a>
+    <ul class="header__nav__items">
+      <li class="header__nav__item">
+        <a href="index.html" class="header__nav__item__link">home</a>
+      </li>
+      <li class="header__nav__item">
+        <a href="availability.html" class="header__nav__item__link">availability</a>
+      </li>
+      <li class="header__nav__item">
+        <a href="interior.html" class="header__nav__item__link">interior</a>
+      </li>
+      <li class="header__nav__item">
+        <a href="amenities.html" class="header__nav__item__link">amenities</a>
+      </li>
+      <li class="header__nav__item header__nav__itemActive">
+        <a href="neighborhood.html" class="header__nav__item__link">neighborhood</a>
+      </li>
+      <li class="header__nav__item">
+        <a href="contact.html" class="header__nav__item__link">contact</a>
+      </li>
+    </ul>
+  </div>
 
 </header>
 
 
-<div class="page--neighborhood">
-    <h1 class="page--neighborhood__title page__title "></h1>
-    <img src="#" class="page--neighborhood--map--img">
+<div class="page page--neighborhood">
+  <h1 class="page--neighborhood__title page__title ">neighborhood</h1>
+  <img src="img/neighborhood/neighborhoodMap.jpg" class="page--neighborhood--map--img">
 
-    <article class="page--neighborhood__gallery page__gallery">
-        <img src="img/homePark1.jpg" class="page__gallery__img--1 page__gallery__img">
-        <img src="img/homePark2.jpg" class="page__gallery__img--2 page__gallery__img">
-        <img src="img/homePark3.jpg" class="page__gallery__img--3 page__gallery__img">
-        <img src="img/homePark4.jpg" class="page__gallery__img--4 page__gallery__img">
-        <img src="img/homePark5.jpg" class="page__gallery__img--5 page__gallery__img">
-        <img src="img/homePark6.jpg" class="page__gallery__img--6 page__gallery__img">
-    </article>
+  <div class="page--neighborhood__gallery page__gallery">
+    <ul class="page--neighborhood__gallery page__gallery">
+      <li class="page__gallery__col page__gallery__col--1 page--neighborhood__gallery__col">
+        <img src="img/neighborhood/neighborhoodGal--01.jpg" class="page__gallery__col__img--1 page__gallery__col__img">
+        <img src="img/neighborhood/neighborhoodGal--04.jpg" class="page__gallery__col__img--2 page__gallery__col__img">
+      </li>
+      <li class="page__gallery__col page__gallery__col--2 page--neighborhood__gallery__col">
+        <img src="img/neighborhood/neighborhoodGal--02.jpg" class="page__gallery__col__img--4 page__gallery__col__img">
+        <img src="img/neighborhood/neighborhoodGal--05.jpg" class="page__gallery__col__img--5 page__gallery__col__img">
+      </li>
+      <li class="page__gallery__col page__gallery__col--3 page--neighborhood__gallery__col">
+        <img src="img/neighborhood/neighborhoodGal--03.jpg" class="page__gallery__col__img--3 page__gallery__col__img">
+        <img src="img/neighborhood/neighborhoodGal--06.jpg" class="page__gallery__col__img--6 page__gallery__col__img">
+      </li>
+    </ul>
+  </div>
 
-    <article class="page__article page--neighborhood__article">
-        <img src="img/homeInterior.jpg" class="page__article__img page--neighborhood__article__img">
-        <h2 class="page__title--secondary page--neighborhood__article__title">interior</h2>
-        <span class="page--neighborhood__article__title--sub"> Morbi in ipsum sit amet facilisis laoreet.</span>
-        <p class="page--neighborhood__article__p page__p">
-            Praesent blandit dolor.Sed non quam. In vel mi sit amet augue congue elementum.
-            Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc,
-            viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus.
-            Ut ultrices ultrices enim. Curabitur sit amet mauris
-        </p>
-    </article>
 
-    <article class="page__slider page--neighborhood__slider">
-        <img src="" class="page__slider__img page--neighborhood__slider__img page--neighborhood__slider__img__1">
-        <img src="" class="page__slider__img page--neighborhood__slider__img page--neighborhood__slider__img__2">
-        <img src="" class="page__slider__img page--neighborhood__slider__img page--neighborhood__slider__img__3">
-    </article></div>
+  <article class="page__article page--neighborhood__article">
+    <img src="img/neighborhood/neighborhood--article.jpg" class="page__article__img page--neighborhood__article__img">
+    <div class="page__article__txts page--neighborhood__article__txts">
+      <h2 class="page__title--secondary page--neighborhood__article__txts__title">prospect park</h2>
+      <span class="page--neighborhood__article__txts__title--sub">prospect lefferts gardens</span>
+      <p class="page--neighborhood__article__txts__p page__article__txts__p page__p">
+        Praesent blandit dolor.Sed non quam. In vel mi sit amet augue congue elementum.
+        Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc,
+        viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus.
+        Ut ultrices ultrices enim. Curabitur sit amet mauris
+      </p>
+      <p class="page--neighborhood__article__txts__p page__article__txts__p page__p">
+        Praesent blandit dolor.Sed non quam. In vel mi sit amet augue congue elementum.
+        Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc,
+        viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus.
+        Ut ultrices ultrices enim. Curabitur sit amet mauris
+      </p>
+    </div>
+  </article>
+
+  <div class="page__slider page--neighborhood__slider">
+    <img src="img/slider/banner1.jpg" class="page__slider__img page--neighborhood__slider__img page--neighborhood__slider__img__1 ">
+    <img src="img/slider/slider2.jpg" class="page__slider__img page--neighborhood__slider__img page--neighborhood__slider__img__2">
+    <img src="img/slider/slider3.jpg" class="page__slider__img page--neighborhood__slider__img page--neighborhood__slider__img__3">
+  </div>
+</div>
+
 <footer class="footer">
-    <p class="footer__text"></p>
+  <p class="footer__txt">626 flatbush avenu brooklyn, NY 11225 <a>(718)826 6626</a></p>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-2.2.2.min.js"><\/script>')</script>
+<script src="js/jquery.waitforimages.min.js"></script>
+<script src="js/scrollreveal.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

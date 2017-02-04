@@ -1,0 +1,1754 @@
+@font-face {
+  font-family: 'Montserrat', serif;
+  src: url('../css/fonts/Montserrat--serifBold.eot');
+  src: url('../css/fonts/Montserrat--serifBold.eot?#iefix') format('embedded-opentype'), url('../css/fonts/Montserrat--serifBold.woff') format('woff'), url('../css/fonts/Montserrat--serifBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat', serif;
+  src: url('../css/fonts/Montserrat--serifRegular.eot');
+  src: url('../css/fonts/Montserrat--serifRegular.eot?#iefix') format('embedded-opentype'), url('../css/fonts/Montserrat--serifRegular.woff') format('woff'), url('../css/fonts/Montserrat--serifRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('../css/fonts/GlacialIndifference-Regular.eot');
+  src: url('../css/fonts/GlacialIndifference-Regular.eot?#iefix') format('embedded-opentype'), url('../css/fonts/GlacialIndifference-Regular.woff') format('woff'), url('../css/fonts/GlacialIndifference-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('../css/fonts/GlacialIndifference-Bold.eot');
+  src: url('../css/fonts/GlacialIndifference-Bold.eot?#iefix') format('embedded-opentype'), url('../css/fonts/GlacialIndifference-Bold.woff') format('woff'), url('../css/fonts/GlacialIndifference-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+.hidden {
+  display: none !important;
+}
+.header {
+  width: 100%;
+  margin: auto;
+  display: block;
+  height: 140px;
+}
+.header__nav {
+  width: 77%;
+  height: 140px;
+  margin: 0 auto;
+  position: relative;
+  top: 22%;
+}
+.header__nav__logo {
+  width: 18%;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.header__nav__items {
+  display: inline-block;
+  width: 81%;
+  position: relative;
+  text-align: right;
+}
+.header__nav__item {
+  font-family: "Glacial Indifference", serif;
+  display: inline;
+  margin: 0 6px;
+}
+.header__nav__item__link {
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 19px;
+  font-style: italic;
+}
+.header__nav__item:hover {
+  border-bottom: 2px solid #f67906;
+}
+.header__nav__itemActive {
+  border-bottom: 2px solid #f67906;
+}
+.page__slider {
+  width: 100%;
+  height: 550px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.page__slider__img {
+  position: absolute;
+  background-position: center top;
+  background-repeat: repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: opacity 1500ms ease,transform 30s ease;
+  -moz-transition: opacity 1500ms ease,transform 30s ease;
+  -ms-transition: opacity 1500ms ease,transform 30s ease;
+  -o-transition: opacity 1500ms ease,transform 30s ease;
+  transition: opacity 1500ms ease,transform 30s ease;
+  filter: alpha(opacity=  0 );
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+}
+.page__slider__img.show {
+  filter: alpha(opacity=  80 );
+  -khtml-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
+.page--home__slider {
+  overflow: hidden;
+}
+.page--home__slider__img--1 {
+  position: absolute;
+  background-position: center top;
+  background-repeat: repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+}
+.page--home__slider__img__txt {
+  position: relative;
+  z-index: 1;
+  margin: 11% auto 7%;
+}
+.page--home__slider__title {
+  width: 100%;
+  margin-bottom: 10%;
+  color: #f87603;
+  font-size: 67px;
+  text-align: center;
+  letter-spacing: 7px;
+  font-family: "Glacial Indifference", serif;
+}
+.page--home__slider__p {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 70%;
+  color: #e9e2df;
+  line-height: 40px;
+  font-size: 25px;
+  font-family: "Glacial Indifference", serif;
+  font-style: italic;
+}
+.page__btn {
+  width: 152px;
+  height: 45px;
+  background-color: #3a5f40;
+  color: #e1e9dc;
+  border: none;
+  text-align: center;
+  line-height: 45px;
+  padding: 0;
+  font-size: 17px;
+  font-family: 'Montserrat', serif;
+}
+.page__title {
+  text-align: center;
+  font-size: 50px;
+  color: #465d4b;
+  letter-spacing: 3px;
+  font-family: "Glacial Indifference", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+.page__title--secondary {
+  font-size: 40px;
+  color: #ea7208;
+  letter-spacing: 2px;
+  font-style: italic;
+  font-family: "Glacial Indifference", serif;
+  font-weight: 600;
+}
+.page__p {
+  font-family: "Glacial Indifference", serif;
+}
+.page__article {
+  margin: 90px auto 0;
+  display: block;
+  overflow: hidden;
+}
+.page__article__txts {
+  width: 25%;
+  display: inline-block;
+  margin-left: 6%;
+  vertical-align: top;
+}
+.page__article__txts__p {
+  width: 100%;
+  display: block;
+  margin: 52px 0;
+  line-height: 24px;
+  font-size: 17px;
+}
+.page__article__txts__btn {
+  display: block;
+}
+.page__article__img {
+  width: 68%;
+  height: auto;
+  display: inline-block;
+}
+.page__gallery {
+  max-width: 1300px;
+  margin: auto;
+  display: block;
+}
+.page__gallery__col {
+  display: inline-block;
+  width: 32%;
+  overflow: hidden;
+}
+.page__gallery__col__img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 4%;
+  vertical-align: bottom;
+  padding: 0;
+}
+.page__gallery__col--2 {
+  margin: 0 1%;
+}
+.page--home__maine {
+  max-width: 1300px;
+  margin: auto;
+  display: block;
+}
+.page--home__maine__neighborhood__txts {
+  margin-left: 0;
+  width: 28%;
+}
+.page--home__maine__neighborhood__img {
+  margin-left: 3%;
+}
+.page--home__maine__title {
+  margin: 125px auto 110px;
+}
+.page--home__gallery__btn {
+  margin: 31px auto 71px;
+  display: block;
+}
+.page--home__gallery__title {
+  margin: 155px auto 119px;
+}
+.page--home__map {
+  max-width: 1300px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.page--home__map__img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.page--home__map__items {
+  display: inline-block;
+  width: 245px;
+  height: 450px;
+  margin-left: 32px;
+  position: relative;
+  background-color: #f87706;
+}
+.page--home__map__item {
+  display: inline-block;
+  margin: 5px ;
+  position: relative;
+}
+.page--home__map__item__icon {
+  width: 25px;
+  margin-right: 15px;
+}
+.page--home__map__item__link {
+  font-size: 25px;
+  position: relative;
+  top: 10px;
+  color: #fff;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-family: 'Glacial Indifference', serif;
+}
+.page--home__map__location {
+  position: absolute;
+}
+.page--home__map__location--bar {
+  bottom: 31%;
+  left: 33%;
+}
+.page--home__map__location--rest {
+  bottom: 47%;
+  left: 54%;
+}
+.page--home__map__location--cafe {
+  bottom: 48%;
+  left: 63%;
+}
+.page--home__map__location--health {
+  top: 48%;
+  left: 70%;
+}
+.page--home__map__location--creat {
+  top: 40%;
+  right: 16%;
+}
+.page--home__map__location--conv {
+  right: 50%;
+  bottom: 20%;
+}
+.page--home__map__location--school {
+  top: 64%;
+  right: 19%;
+}
+.map__location--hover {
+  width: 40px;
+  border-bottom: #00f1ff 8px solid;
+  border-radius: 35%;
+}
+.page--availability {
+  max-width: 1300px;
+  margin: auto;
+}
+.page--availability__title {
+  margin: 100px auto;
+}
+.page--availability__article {
+  margin: 110px auto 0;
+}
+.page--availability__article__link {
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px auto 50px;
+  line-height: 47px;
+}
+.page--availability__rooms__title {
+  margin: 220px auto 0;
+  display: block;
+  text-align: center;
+  font-size: 52px;
+  text-transform: uppercase;
+  color: #3e6047;
+  font-weight: 800;
+}
+.page--availability__rooms__nav {
+  display: block;
+  margin: 5px auto 83px;
+  text-align: center;
+}
+.page--availability__rooms__nav__item {
+  display: inline;
+  font-size: 30px;
+  color: #EA7208;
+  text-transform: uppercase;
+  margin: 0 6px;
+  cursor: pointer;
+}
+.page--availability__rooms__items {
+  display: block;
+  text-align: center;
+  width: auto;
+}
+.page--availability__rooms__item {
+  display: inline-block;
+  height: 37px;
+  background-color: #396043;
+  margin: 3px 5px 0 0;
+}
+.page--availability__rooms__item--category {
+  width: 63px;
+  background-color: #f67804;
+}
+.page--availability__rooms__item--type {
+  width: 211px;
+}
+.page--availability__rooms__item--price {
+  width: 168px;
+}
+.page--availability__rooms__item--bath {
+  width: 156px;
+}
+.page--availability__rooms__item--floorplan {
+  width: 311px;
+  cursor: pointer;
+}
+.page--availability__rooms__item__name {
+  line-height: 37px;
+  font-size: 23px;
+  text-transform: uppercase;
+  color: #e5fae7;
+  display: inline-block;
+}
+.page--availability__rooms__txtRow {
+  text-align: center;
+  text-transform: capitalize;
+  display: block;
+  margin: 32px auto 306px;
+}
+.page--interior {
+  max-width: 1300px;
+  margin: auto;
+  display: block;
+}
+.page--interior__title {
+  margin: 90px auto 117px;
+}
+.page--interior__gallery {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+}
+.page--interior__gallery__col {
+  display: inline-block;
+  width: 48%;
+  height: auto;
+}
+.page--interior__gallery__col--3 {
+  width: 3%;
+  vertical-align: top;
+}
+.page--interior__gallery__col__img {
+  width: 101%;
+  height: auto;
+}
+.page--interior__gallery__col__illustration {
+  width: 107%;
+  height: auto;
+  vertical-align: top;
+}
+.page--interior__article {
+  margin: 213px auto 168px;
+  display: block;
+}
+.page--interior__article__img {
+  width: 65%;
+}
+.page--interior__article__txts {
+  left: 30px;
+}
+.page--interior__article__txts__title {
+  text-transform: uppercase;
+}
+.page--amenities__header {
+  border-bottom: solid #d8d8d8 1px;
+}
+.page--amenities__slider__img {
+  position: absolute;
+  bottom: 0;
+}
+.page--amenities__title {
+  margin: 87px auto;
+}
+.page--amenities__gallery {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+.page--amenities__gallery__col {
+  width: 49%;
+  height: auto;
+  vertical-align: top;
+  position: relative;
+  display: inline-block;
+}
+.page--amenities__gallery__col__img {
+  height: 400px;
+  width: 103%;
+  display: block;
+}
+.page--amenities__gallery__col__img--1 {
+  background-color: #f87806;
+}
+.page--amenities__gallery__btn {
+  position: relative;
+  display: block;
+  margin: 0 8% 15% ;
+}
+.page--amenities__gallery__col__title--1 {
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-size: 43px;
+  position: relative;
+  padding-top: 18%;
+  letter-spacing: 2px;
+  color: #fff;
+  font-style: italic;
+}
+.page--amenities__gallery__col__title--2 {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+  font-size: 65px;
+  color: #fff;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 3px;
+  border-bottom: solid 2px #fff;
+}
+.page--amenities__gallery__col__txt {
+  width: 70%;
+  text-align: left;
+  font-size: 17px;
+  line-height: 25px;
+  position: relative;
+  top: 5%;
+  color: #707070;
+  margin: 0 auto 20px;
+}
+.page--neighborhood__title {
+  margin: 30px auto 106px;
+}
+.page--neighborhood--map--img {
+  width: 100%;
+  height: auto;
+}
+.page--neighborhood__gallery {
+  margin: 84px auto 33px;
+}
+.page--neighborhood__gallery__col {
+  vertical-align: top;
+}
+.page--neighborhood__article {
+  margin: auto;
+}
+.page--neighborhood__article__txts {
+  width: 40%;
+}
+.page--neighborhood__article__txts__p {
+  margin: 26px 0;
+  line-height: 24px;
+}
+.page--neighborhood__article__txts__title--sub {
+  margin: 41px auto 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: block;
+}
+.page--neighborhood__article__img {
+  width: 48%;
+}
+.page--neighborhood__slider {
+  margin: 100px auto 0;
+}
+.page--neighborhood__slider__img {
+  position: absolute;
+  bottom: 0;
+}
+.page__contact {
+  width: 75%;
+  margin: 77px auto 60px;
+}
+.page__contact__logo {
+  display: block;
+  margin: auto;
+  width: 41%;
+}
+.page__contact__p {
+  margin: 65px auto 15px;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 26px;
+  color: #53735b;
+}
+.page__contact__p__link {
+  text-decoration: none;
+}
+.page__contact__form {
+  width: 100%;
+  margin: auto;
+}
+.page__contact__form__input {
+  width: 44%;
+  height: 66px;
+  display: inline-block;
+  text-align: center;
+  margin: 1% 0 1% 4%;
+  border: none;
+  border-bottom: inset 1px #a2aeab;
+  color: #53735b;
+  font-family: "Glacial Indifference", serif;
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: 35px;
+}
+.page__contact__form__btn {
+  display: block;
+  margin: 28px auto 90px;
+}
+.footer {
+  width: 100%;
+  height: 120px;
+  background-color: #3a5f40;
+  display: block;
+  position: absolute;
+}
+.footer__txt {
+  text-align: center;
+  position: relative;
+  top: 35px;
+  font-family: "Montserrat", serif;
+  font-size: 16px;
+  color: #fff;
+}
+/*!
+ * =========================== ATTENTION ===========================
+ * Use BEM system for css class names https://css-tricks.com/bem-101
+ * This CSS file has been created using http://cssguidelin.es/ standards
+ * This CSS file has been generated from LESS file with the similar name
+ * ===================================================================
+ */
+/*
+YUI 3.18.1 (build f7e7bcb)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+@charset "UTF-8";
+html {
+  color: #000;
+  background: #ffffff;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before,
+q:after {
+  content: '';
+}
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  *font-size: 100%;
+}
+legend {
+  color: #000000;
+}
+#yui3-css-stamp.cssreset {
+  display: none;
+}
+/*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+/* Document
+   ========================================================================== */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+}
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+}
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+  font-weight: bold;
+}
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block;
+}
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  font-size-adjust: auto;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  -webkit-hyphenate-before: 2;
+  -webkit-hyphenate-after: 3;
+  hyphenate-lines: 3;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+/*
+ *  Force Hand Cursor over clickable Items
+ */
+a[href],
+input[type='submit'],
+input[type='image'],
+label[for],
+select,
+button,
+.pointer {
+  cursor: pointer;
+}
+/*
+ *  removes outline
+ */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/*
+ *  Pure html Tooltip, using only data-tooltip attribute to insert text
+ */
+.page,
+.loader {
+  filter: alpha(opacity=  100 );
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: opacity 300ms ease;
+  -moz-transition: opacity 300ms ease;
+  -ms-transition: opacity 300ms ease;
+  -o-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+.page.hide,
+.loader.hide {
+  filter: alpha(opacity=  0 );
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  z-index: -1;
+}
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 5;
+  perspective: 300px;
+}
+.loader img {
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 50%;
+  width: 225px;
+  margin-top: -60px;
+  margin-left: -117px;
+}
+.addToolTip {
+  border-bottom: 1px solid #bbb;
+  color: #666;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  /* Tooltip styling */
+}
+.addToolTip:hover,
+.addToolTip:focus {
+  color: #36c;
+}
+.addToolTip:active {
+  top: 1px;
+}
+.addToolTip[data-tooltip]:after {
+  border-top: 8px solid #222;
+  border-top: 8px solid rgba(0, 0, 0, 0.85);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  content: "";
+  display: none;
+  height: 0;
+  width: 0;
+  left: 25%;
+  position: absolute;
+}
+.addToolTip[data-tooltip]:before {
+  background: #222;
+  background: rgba(0, 0, 0, 0.85);
+  color: #f6f6f6;
+  content: attr(data-tooltip);
+  display: none;
+  font-family: sans-serif;
+  font-size: 14px;
+  height: 32px;
+  left: 0;
+  line-height: 32px;
+  padding: 0 15px;
+  position: absolute;
+  text-shadow: 0 1px 1px #000000;
+  white-space: nowrap;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.addToolTip[data-tooltip]:hover:after {
+  display: block;
+  top: -9px;
+}
+.addToolTip[data-tooltip]:hover:before {
+  display: block;
+  top: -41px;
+}
+.addToolTip[data-tooltip]:active:after {
+  top: -10px;
+}
+.addToolTip[data-tooltip]:active:before {
+  top: -42px;
+}
+/*
+ * Hide visually and from screen readers
+ */
+.hidden {
+  display: none !important;
+}
+/*
+ * Hide placeholder when focused
+ */
+.hidePlaceholder:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.hidePlaceholder:focus:-moz-placeholder {
+  color: transparent;
+}
+.hidePlaceholder:focus::-moz-placeholder {
+  color: transparent;
+}
+.hidePlaceholder:focus:-ms-input-placeholder {
+  color: transparent;
+}
+/*
+ * Disables selection fot the corrent element
+ */
+.unselectable {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+}
+/*
+ * vertically centers any element
+ */
+.vCenter {
+  min-height: 6.5em;
+  display: table-cell;
+  vertical-align: middle;
+}
+/*
+ * Removes horizontal scrollbar from pre tag:
+ */
+pre {
+  white-space: pre-wrap;
+  /* css-3 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+.invisible {
+  visibility: hidden;
+}
+.opaque {
+  filter: alpha(opacity=  0 );
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+}
+.nonOpaque {
+  filter: alpha(opacity=  100 );
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  *:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
+                                          http://www.sanbeiji.com/archives/953 */
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+@media (max-width: 1024px) {
+  .header__nav {
+    width: 98%;
+    margin: 0 15px;
+  }
+  .page__slider {
+    height: 510px;
+  }
+  .page--availability__rooms__items {
+    display: inline-block;
+    width: 300px;
+  }
+  .page--availability__rooms__item {
+    width: 100%;
+  }
+  .page--availability__menu {
+    width: 605px;
+    margin: auto;
+    display: block;
+  }
+  .page__article,
+  .page__gallery {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .page__contact {
+    width: 97%;
+  }
+  .page--interior__article {
+    margin: 120px 20px 100px;
+  }
+  .page--amenities__gallery__col__txt {
+    width: 85%;
+    line-height: 23px;
+    top: 4%;
+    margin: 0 auto 10px;
+  }
+}
+@media (max-width: 786px) {
+  .page__slider {
+    height: 385px;
+  }
+  .page--home__slider__img__txt {
+    margin: 5% auto 5%;
+  }
+  .page--home__slider__title {
+    margin-bottom: 0;
+  }
+  .page--home__slider__p {
+    width: 85%;
+    line-height: 35px;
+  }
+  .page__article__img {
+    width: 50%;
+  }
+  .page__article__txts {
+    width: 46%;
+    margin-left: 2%;
+  }
+  .page--home__maine__neighborhood__txts {
+    width: 46%;
+    margin-left: 0;
+  }
+  .page__contact__form__input {
+    height: 50px;
+  }
+  .page--interior__title {
+    margin: 30px auto 50px;
+  }
+  .page--interior__gallery__col {
+    width: 49%;
+  }
+  .page--interior__gallery__col--3 {
+    display: none;
+  }
+  .page--interior__gallery__col__img {
+    width: 103%;
+  }
+  .page--amenities__gallery__col {
+    width: 49%;
+  }
+  .page--amenities__gallery__col__img {
+    width: 103%;
+    height: 250px;
+  }
+  .page--amenities__gallery__col__title--1 {
+    padding-top: 10%;
+  }
+  .page--amenities__gallery__col__title--2 {
+    width: 90%;
+    font-size: 45px;
+  }
+  .page--amenities__gallery__col__txt {
+    width: 95%;
+    font-size: 14px;
+    line-height: 20px;
+    top: 0;
+  }
+}
+@media (max-width: 480px) {
+  .header__nav__logo {
+    width: 30%;
+    vertical-align: inherit;
+  }
+  .header__nav__items {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .header__nav__item {
+    margin: 0 1px;
+  }
+  .header__nav__item__link {
+    font-size: 15px;
+  }
+  .page__slider {
+    height: 235px;
+  }
+  .page--home__slider__img__txt {
+    display: none;
+  }
+  .page--home__maine__title {
+    margin: 50px auto 50px;
+  }
+  .page__article,
+  .page__gallery {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .page__article__img {
+    width: 95%;
+    display: block;
+    margin: auto;
+  }
+  .page__article__txts {
+    width: 95%;
+    display: block;
+    margin: auto;
+  }
+  .page__gallery__col {
+    display: block;
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .page--home__map {
+    display: none;
+  }
+  .page__contact__form__input {
+    width: 95%;
+  }
+  .page--availability__title {
+    margin: 50px auto;
+  }
+  .page--availability__menu {
+    width: 300px;
+  }
+  .page--availability__rooms__txtRow {
+    margin: 30px auto 50px;
+  }
+  .page--amenities__gallery__col__img {
+    height: 180px;
+  }
+  .page--amenities__gallery__col__title--1,
+  .page--amenities__gallery__col__title--2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 320px) {
+  .page--amenities__gallery__col {
+    display: block;
+    width: 100%;
+  }
+  .page--amenities__gallery__col__img {
+    width: 100%;
+    margin: auto;
+  }
+  .page--amenities__gallery__btn {
+    margin: 15px auto;
+  }
+}

@@ -3,40 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
 </head>
 <body>
 <header class="header">
     <div class="header__nav">
-        <img src="img/logo__black.png" class="header__nav__logo">
-        <ul class=header__nav__items>
+       <a href="index.html"> <img src="img/logo__black.png" class="header__nav__logo"> </a>
+        <ul class="header__nav__items">
             <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">home</a>
+                <a href="index.html" class="header__nav__item__link">home</a>
             </li>
             <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">availability</a>
+                <a href="availability.html" class="header__nav__item__link">availability</a>
             </li>
             <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">interior</a>
+                <a href="interior.html" class="header__nav__item__link">interior</a>
             </li>
             <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">amenities</a>
+                <a href="amenities.html" class="header__nav__item__link">amenities</a>
             </li>
             <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">amenities</a>
+                <a href="neighborhood.html" class="header__nav__item__link">neighborhood</a>
             </li>
-            <li class="header__nav__item">
-                <a href="#" class="header__nav__item__link">contact</a>
+            <li class="header__nav__item header__nav__itemActive">
+                <a href="contact.html" class="header__nav__item__link">contact</a>
             </li>
         </ul>
     </div>
 
+
 </header>
 
-<article class="page--contact page__contact">
+
+<article class="page page--contact page__contact">
     <img src="img/logo__black.png" class="page--contact__logo page__contact__logo">
-    <p class="page--contact__p page__p"> Quisque nisl felis, venenatis tristique,
+    <p class="page--contact__p page__p page__contact__p"> Quisque nisl felis, venenatis tristique,
         dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante.
-        <a href="#" class="page--contact__p__link page__title--secondary"> Nulla quam. Aenean laoreet.
+        Quisque nisl felis, venenatis, dignissim in, ultrices sit.<br>
+        <a href="#" class="page--contact__p__link page__contact__p__link page__title--secondary"> Nulla
+            quam. Aenean laoreet.
             Vestibulum nisi lectus, commodo ac,facilisis ac, ultricies eu, pede.
         </a>
     </p>
@@ -47,13 +53,13 @@
         <input type="text" value="phone number" class="page__contact__form__input page--contact__form__input">
         <input type="text" value="budget" class="page__contact__form__input page--contact__form__input">
         <input type="text" value="bedrooms" class="page__contact__form__input page--contact__form__input">
-        <input type="submit" value="submit" class="page--contact__form__btn page__btn">
+        <input type="submit" value="submit" class="page--contact__form__btn page__btn page__contact__form__btn">
     </form>
 </article>
 
 <footer class="footer">
-    <p class="footer__text"></p>
-    <img src="#" class="footer__logo">
+    <p class="footer__txt">626 flatbush avenu brooklyn, NY 11225 <a>(718)826 6626</a></p>
+    <img src="" class="footer__logo">
 </footer>
 </body>
 </html>
